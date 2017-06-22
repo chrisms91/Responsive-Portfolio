@@ -51,6 +51,7 @@ img {
 	width: 960px;
 	margin-right: auto;
 	margin-left: auto;
+	overflow: hidden;
 }
 
 .site-header {
@@ -72,6 +73,7 @@ img {
 	float: left;
 	padding: 29px 35px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	display: inline-block;
 }
 
 .site-navlist {
@@ -323,7 +325,6 @@ label {
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
-		
 	}
 }
 
@@ -348,4 +349,61 @@ label {
 		width: auto;
 		height: 280px;
 	}
+
+	.portfolio-item {
+		float: left;
+    width: 48%;
+    margin-right: 2%;
+	}
 }
+
+@media screen and (max-width: 640px) {
+	
+	.container {
+		width: 100%;
+	}
+
+	.site-navbar {
+		height: auto;
+	}
+
+	.site-logo {
+		width: 100%;
+		text-align: center;
+	}
+
+	.site-navlist {
+		float: none;
+		width: 100%;
+		overflow: auto;
+	}
+
+	.site-navlist li {
+		width: 33%;
+		float: left;
+		display: inline;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	#navlist-border {
+		border: 0;
+	}
+
+	.img-profile {
+		float: none;
+		width: 50%;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+
+	.portfolio-item {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
